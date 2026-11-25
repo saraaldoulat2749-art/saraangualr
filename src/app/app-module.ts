@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar-component/navbar-component';
 import { ProductListComponent } from './product-list-component/product-list-component';
 import { ProductDetailsComponent } from './product-details-component/product-details-component';
 import { FooterComponent } from './footer-component/footer-component';
+import { ShoppingCart } from './shopping-cart/shopping-cart';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FooterComponent } from './footer-component/footer-component';
     ProductListComponent,
     ProductDetailsComponent,
     FooterComponent,
+    ShoppingCart,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideBrowserGlobalErrorListeners(), provideClientHydration()],

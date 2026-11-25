@@ -1,5 +1,22 @@
 <app-header-component></app-header-component>
 <app-navbar-component></app-navbar-component>
 <app-product-list-component></app-product-list-component>
-<app-product-details-component></app-product-details-component>
+<app-product-details-component
+ [productName]="productName()"
+[productDescription]="productDescription()"
+[productPrice]="productPrice()"
+[isAvailable]="isAvailable()"
+(productEvent)="receiveData($event)"
+(quantityEvent)="receiveQuantity($event)"
+></app-product-details-component>
+<app-shopping-cart
+    [productName]="receivedProduct"
+    [quantity]="receivedQuantity"
+    [productPrice]="productPrice()">
+</app-shopping-cart>
+<button class="change-product"
+(click)="changeProduct()">
+    Change Product
+</button>
+
 <app-footer-component></app-footer-component>

@@ -8,8 +8,17 @@
 
 <p>Price: {{ productPrice }} JD</p>
 
-<p>Quantity: {{ quantity }}</p>
+<p>Quantity: {{ quantity() }}</p>
+<button (click) = "Increase()">+</button>
 
+<button (click) = "Decrease()">-</button>
 <p>Available: {{ isAvailable }}</p>
 
 <p>Discount: {{ discountPercentage }}%</p>
+
+
+<button (click)="senddata()"
+        [disabled]="quantity() === 0 || !isAvailable">
+    Add to Cart
+</button>
+

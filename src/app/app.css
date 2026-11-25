@@ -16,3 +16,25 @@ button {
 html {
     scroll-behavior: smooth;
 }
+.change-product {
+    display: block;
+    margin: 25px auto;
+    padding: 14px 30px;
+    background-color: #ff7900;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.change-product:hover {
+    background-color: #e66a00;
+    transform: translateY(-3px);
+}
+
+.change-product:active {
+    transform: scale(0.97);
+}
