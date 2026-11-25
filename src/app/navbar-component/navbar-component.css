@@ -1,0 +1,34 @@
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff7900;
+}
+
+button:focus {
+    background-color: #ff7900;
+}
+
+h2 {
+    text-align: center;
+    color: #ff7900;
+    font-size: 20px;
+    margin: 25px;
+}

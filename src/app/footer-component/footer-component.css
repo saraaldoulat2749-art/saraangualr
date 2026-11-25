@@ -1,0 +1,27 @@
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 40px;
+    border-top: 4px solid #ff7900;
+}
+
+h2 {
+    color: #ff7900;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+p {
+    color: #ddd;
+    font-size: 15px;
+    margin: 12px 0;
+}
+
+p:last-child {
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    margin-top: 25px;
+    font-size: 13px;
+}

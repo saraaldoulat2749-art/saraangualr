@@ -1,0 +1,78 @@
+<h1>Our Products</h1>
+<div class="products-container">
+    <div class="product-card">
+<!-- Product 1 -->
+<div>
+    <h2>{{ products[0].name }}</h2>
+    <p>{{ products[0].description }}</p>
+    <p>{{ products[0].price }} JD</p>
+
+    <img [src]="products[0].image" width="150">
+
+    <button [disabled]="!products[0].isAvailable"
+            (click)="buy()">
+        Buy Now
+    </button></div>
+</div>
+
+
+<div class="product-card">
+<!-- Product 2 -->
+<div>
+    <h2>{{ products[1].name }}</h2>
+    <p>{{ products[1].description }}</p>
+    <p>{{ products[1].price }} JD</p>
+
+    <img [src]="products[1].image" width="150">
+
+    <button [disabled]="!products[1].isAvailable"
+            (click)="buy()">
+        Buy Now
+    </button></div>
+</div>
+
+
+<div class="product-card">
+<!-- Product 3 -->
+<div>
+    <h2>{{ products[2].name }}</h2>
+    <p>{{ products[2].description }}</p>
+    <p>{{ products[2].price }} JD</p>
+
+    <img [src]="products[2].image" width="150">
+
+    <button [disabled]="!products[2].isAvailable"
+            (click)="buy()">
+        Buy Now
+    </button>
+</div></div>
+
+<div class="product-card">
+<!-- Product 4 -->
+<div>
+    <h2>{{ products[3].name }}</h2>
+    <p>{{ products[3].description }}</p>
+    <p>{{ products[3].price }} JD</p>
+
+    <img [src]="products[3].image" width="150">
+
+    <button [disabled]="!products[3].isAvailable"
+            (click)="buy()">
+        Buy Now
+    </button>
+</div></div>
+
+<div class="product-card">
+<!-- Product 5 -->
+<div>
+    <h2>{{ products[4].name }}</h2>
+    <p>{{ products[4].description }}</p>
+    <p>{{ products[4].price }} JD</p>
+
+    <img [src]="products[4].image" width="150">
+
+    <button [disabled]="!products[4].isAvailable"
+            (click)="buy()">
+        Buy Now
+    </button></div>
+</div></div>
